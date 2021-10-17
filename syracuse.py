@@ -22,7 +22,8 @@ def syracuse(number:int,log:bool=True)->bool:
     if z<10000:return True
     else:return False
 
-def test(n1,n2):
+#fonction qui permet de tester la fonction ci-dessus.
+def test(n1:int,n2:int)->None:
     for i in range(n1,n2):
         x=syracuse(i,False)
         if x==True:
