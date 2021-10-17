@@ -9,11 +9,21 @@ Fait par Splyder, le 16/10/2021
 #cette fonction permet de tester la conjecture de syracuse pour un nombre donne.
 
 def syracuse(number:int,log:bool=True)->bool:
+    z=0
     while number!=1 and number>1:
         if bin(int(number))[-1]=="0":
             if log==True:print(number,"/2=",number/2)
             number=number/2
+            z+=1
         else:
             if log==True:print(number,"*3+1=",number*3+1)
             number=number*3+1
-    return True
+            z+=1
+    if z<10000:return True
+    else:return False
+
+def test(n1,n2):
+    for i in range(n1,n2):
+        x=syracuse(i,False)
+        if x==True:
+            print(i)
