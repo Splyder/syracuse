@@ -1,5 +1,6 @@
 '''
-Fait par Splyder, le 16/10/2021 
+Fait par Splyder, le 16/10/2021
+Dernière modification le 17/10/2021
 '''
 #Conjecture de Syracuse
 #ou Conjecture de Collatz
